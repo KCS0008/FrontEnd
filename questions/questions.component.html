@@ -1,0 +1,48 @@
+<div>
+  <canvas id="myChart"></canvas>
+<div ng-controller="myCtrl">
+  <h2>Employee Happiness/Satisfaction Survey</h2>
+  <form  (ngSubmit)="calculateIndex()" >
+    <p>1. Are you generally happy or sad at work?</p>
+    <input type="radio" ng-model="q1" name="q1" value="happy" />Happy
+    <input type="radio" ng-model="q1" name="q1" value="sad" />Sad
+    <br/><br/>
+    <p>2. On a scale of 1-5, how satisfied are you with your job?</p>
+    <input type="radio" ng-model="q2" name="q2" value="1" />1
+    <input type="radio" ng-model="q2" name="q2" value="2" />2
+    <input type="radio" ng-model="q2" name="q2" value="3" />3
+    <input type="radio" ng-model="q2" name="q2" value="4" />4
+    <input type="radio" ng-model="q2" name="q2" value="5" />5
+    <br/><br/>
+    <p>3. How motivated are you to complete your daily tasks?</p>
+    <input type="radio" ng-model="q3" name="q3" value="very" />Very
+    <input type="radio" ng-model="q3" name="q3" value="somewhat" />Somewhat
+    <input type="radio" ng-model="q3" name="q3" value="not" />Not At All
+    <br/><br/>
+    <p>4. Are you able to take breaks during your workday?</p>
+    <input type="radio" ng-model="q4" name="q4" value="yes" />Yes
+    <input type="radio" ng-model="q4" name="q4" value="no" />No
+    <br/><br/>
+    <p>5. Do you feel appreciated by your coworkers?</p>
+    <input type="radio" ng-model="q5" name="q5" value="yes" />Yes
+    <input type="radio" ng-model="q5" name="q5" value="no" />No
+    <br/><br/>
+    <p>6. On a scale of 1-5, how likely are you to recommend your job to a friend?</p>
+    <input type="radio" ng-model="q6" name="q6" value="1" />1
+    <input type="radio" ng-model="q6" name="q6" value="2" />2
+    <input type="radio" ng-model="q6" name="q6" value="3" />3
+    <input type="radio" ng-model="q6" name="q6" value="4" />4
+    <input type="radio" ng-model="q6" name="q6" value="5" />5
+    <br/><br/>
+    <input type="button" value="Submit" onclick="submit()" />
+  </form>
+  <div *ngIf="result">
+    <h3>Employee Happiness/Satisfaction Index: {{ result }}%</h3>
+    <div>
+      <canvas id="chart" width="400" height="400"></canvas>
+    </div>
+  </div>
+</div>
+
+
+

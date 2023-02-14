@@ -1,0 +1,38 @@
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+  border: 3px solid #f1f1f1;
+  padding: 10px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+input[type=radio], input[type=submit] {
+  padding: 10px;
+  width: 20%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+#chart {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+}

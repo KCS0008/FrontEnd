@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+h2 {
+  color: #444;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-check {
+  margin-right: 10px;
+}
+
+#chartdiv {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
